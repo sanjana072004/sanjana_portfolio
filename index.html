@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjana Hiremath | Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --surface-color: #161b22;
+            --primary-color: #f0f6fc;
+            --text-color: #a3b3c4;
+            --accent-color: #3b82f6; 
+            --border-color: #30363d;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        nav {
+            background-color: rgba(10, 10, 10, 0.95);
+            padding: 1.2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--border-color);
+            backdrop-filter: blur(5px);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        section {
+            padding: 4.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 1.8rem;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 0.6rem;
+            font-weight: 600;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 6rem 0 5rem 0;
+        }
+
+        .tagline {
+            font-size: 1.25rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-color);
+            max-width: 700px;
+            margin: 0 auto 2.5rem auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #ffffff;
+            padding: 12px 28px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+            background: var(--surface-color);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 16px;
+            border-bottom: 1px solid var(--border-color);
+            text-align: left;
+        }
+
+        th {
+            background-color: rgba(255, 255, 255, 0.03);
+            color: var(--primary-color);
+            font-weight: 600;
+            width: 25%;
+        }
+
+        td {
+            color: var(--text-color);
+        }
+
+        tr:last-child th, tr:last-child td {
+            border-bottom: none;
+        }
+
+        .project-card, .leadership-card {
+            background: var(--surface-color);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            border-color: #4b5563;
+        }
+
+        .project-card p, .leadership-card p {
+            margin-bottom: 0.8rem;
+        }
+
+        .project-card p:last-child, .leadership-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        strong {
+            color: var(--primary-color);
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+        
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .contact-info a:hover {
+            color: #60a5fa;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Technical Capabilities</a></li>
+            <li><a href="#projects">Engineering Projects</a></li>
+            <li><a href="#leadership">Leadership & Impact</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="home" class="hero">
+            <h1>Sanjana Hiremath</h1>
+            <p class="tagline">Software Developer | Cybersecurity | AI</p>
+            <p>Computer Science undergraduate specializing in IoT, Cybersecurity, and Blockchain with experience in DSA, AI applications, backend development and secure software systems.</p>
+            <a href="#projects" class="btn">View Engineering Portfolio</a>
+        </section>
+
+        <section id="about">
+            <h2>Professional Summary</h2>
+            <p>I am a Computer Science undergraduate pursuing a B.E. in IoT, Cybersecurity with Blockchain at Sir M. Visvesvaraya Institute of Technology in Bengaluru, India, maintaining a CGPA of 8.63. I specialize in backend development, artificial intelligence, and building secure software architectures. Beyond my academic pursuits, I am deeply engaged in the tech community and channel my creativity through painting, reading novels, and competitive badminton.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Capabilities</h2>
+            <table>
+                <tr>
+                    <th>Programming & Web</th>
+                    <td>Python, C/C++, Java, JavaScript, HTML, CSS</td>
+                </tr>
+                <tr>
+                    <th>AI & Specializations</th>
+                    <td>Large Language Models (LLMs), Generative AI, DSA, Cybersecurity, Networking</td>
+                </tr>
+                <tr>
+                    <th>Databases & Tools</th>
+                    <td>SQL, MySQL, SQLite, Git Bash, GitHub</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="projects">
+            <h2>Engineering Projects</h2>
+            
+            <div class="project-card">
+                <h3>Explainable AI Clinical Dashboard</h3>
+                <p>Architected a full-stack clinical dashboard for transparent ML diagnostics utilizing Python, FastAPI, React.js, XGBoost, SHAP, and LIME. Deployed XGBoost models for cardiovascular and chronic kidney disease prediction. Integrated SHAP and LIME to visualize symptom importance and evaluated explanation stability under noisy clinical inputs.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Agentic AI Automated Pull Request Auditor</h3>
+                <p>Developed an autonomous GitHub reviewer for intelligent code auditing using Python, LangGraph, CrewAI, and the GitHub API. Analyzed pull requests for security vulnerabilities and performance issues, and automated inline code reviews with context-aware suggestions.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Automated Task Reminder System</h3>
+                <p>Architected a scalable platform using Python and advanced scheduling logic to connect users with recycling centers. Implemented cron-based scheduling automation and successfully managed concurrent reminders with zero collision errors.</p>
+            </div>
+        </section>
+
+        <section id="leadership">
+            <h2>Leadership & Global Rankings</h2>
+            <div class="leadership-card">
+                <p><strong>Secretary - Cyber Vista Club:</strong> Spearheaded operations and led initiatives for the institution's premier cybersecurity organization.</p>
+                <p><strong>Naukri Campus NCAT 2026:</strong> Achieved an All India Rank (AIR) of <strong>7K</strong> in the National Creative Aptitude Test.</p>
+                <p><strong>Alekhya Inter-College Debate Competition:</strong> Recognized as a Pre-Finalist, demonstrating strong communication and analytical skills.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-info">
+            <h2>Let's Connect</h2>
+            <p><strong>Email:</strong> <a href="mailto:fsanjana194@gmail.com">fsanjana194@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sanjana-hiremath" target="_blank">linkedin.com/in/sanjana-hiremath</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/sanjana072004" target="_blank">github.com/sanjana072004</a></p>
+            <p><strong>Location:</strong> Bengaluru, India</p>
+            <br>
+            <a href="mailto:fsanjana194@gmail.com" class="btn">Initiate Contact</a>
+        </section>
+    </div>
+
+</body>
+</html>
